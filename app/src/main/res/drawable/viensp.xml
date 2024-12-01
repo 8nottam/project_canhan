@@ -1,0 +1,10 @@
+<!-- res/drawable/search_view_border.xml -->
+<shape xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:ignore="ExtraText">
+    <solid android:color="#F0E36D"/> <!-- Màu nền bên trong -->
+    <stroke
+        android:width="2dp"
+        android:color="#BF2525"/>   <!-- Màu của viền -->
+    <corners android:radius="30dp"/> <!-- Bán kính góc bo tròn -->
+</shape>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Ảnh sản phẩm -->
+    <ImageView
+        android:id="@+id/imgProduct"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"/>
+
+    <!-- Tên sản phẩm -->
+    <TextView
+        android:id="@+id/txtProductName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="Tên sản phẩm"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Giá sản phẩm -->
+    <TextView
+        android:id="@+id/txtPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Giá sản phẩm"
+        android:textSize="16sp"
+        android:textColor="@android:color/holo_red_dark"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Seekbar để chọn số lượng -->
+    <SeekBar
+        android:id="@+id/seekBarQuantity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="50"
+        android:progress="1"/>
+
+    <TextView
+        android:id="@+id/txtQuantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Số lượng: 1"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Chọn size -->
+    <RadioGroup
+        android:id="@+id/radioGroupSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rbSizeS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="S"/>
+        <RadioButton
+            android:id="@+id/rbSizeM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="M"/>
+        <RadioButton
+            android:id="@+id/rbSizeL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="L"/>
+        <RadioButton
+            android:id="@+id/rbSizeXL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="XL"/>
+        <RadioButton
+            android:id="@+id/rbSizeXXL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="XXL"/>
+    </RadioGroup>
+
+    <!-- Chọn màu sắc -->
+    <RadioGroup
+        android:id="@+id/radioGroupColor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rbWhite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Trắng"/>
+        <RadioButton
+            android:id="@+id/rbBlack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Đen"/>
+        <RadioButton
+            android:id="@+id/rbPink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hồng"/>
+        <RadioButton
+            android:id="@+id/rbBlue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Xanh Dương"/>
+    </RadioGroup>
+
+    <!-- Nút xác nhận -->
+    <Button
+        android:id="@+id/btnConfirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Xác nhận thêm giỏ hàng"
+        android:layout_marginTop="16dp"/>
+
+</LinearLayout>

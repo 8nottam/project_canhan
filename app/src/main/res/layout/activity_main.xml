@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Nội dung chính sẽ thay đổi ở đây bằng Fragment -->
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="627dp"
+        android:layout_weight="1" />
+
+    <!-- Menu dưới cùng với 5 button -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="@drawable/rounded_menu_background"
+        android:orientation="horizontal"
+        android:weightSum="5">
+
+        <ImageButton
+            android:id="@+id/menu_home"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Button 1"
+            android:src="@drawable/home" />
+
+
+        <ImageButton
+            android:id="@+id/menu_sanpham"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Button 2"
+            android:src="@drawable/shopping1" />
+
+        <ImageButton
+            android:id="@+id/menu_hoadon"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Button 1"
+            android:src="@drawable/invoice" />
+
+        <ImageButton
+            android:id="@+id/menu_thongbao"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Button 1"
+            android:src="@drawable/all1" />
+
+        <ImageButton
+            android:id="@+id/menu_nguoidung"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Button 1"
+            android:src="@drawable/user" />
+    </LinearLayout>
+</LinearLayout>

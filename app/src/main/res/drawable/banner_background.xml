@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#FFFFFF" /> <!-- Màu nền banner -->
+    <corners android:radius="16dp" /> <!-- Bo góc -->
+    <stroke
+        android:width="15dp"
+        android:color="#CCCCCC" /> <!-- Viền banner -->
+</shape>

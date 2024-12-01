@@ -1,0 +1,6 @@
+<!-- res/drawable/rounded_menu_background.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#6EDAE9" />
+    <corners android:radius="35dp" />
+    <shadow android:color="@android:color/black" android:radius="4dp" />
+</shape>

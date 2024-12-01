@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="@drawable/rounded_background">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thông tin sản phẩm"
+        android:textSize="24sp"
+        android:textColor="@color/primary_text"
+        android:layout_marginBottom="16dp"
+        android:textStyle="bold"/>
+
+    <!-- Tên sản phẩm -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tên sản phẩm:"
+        android:textStyle="bold"
+        android:textColor="@color/secondary_text"
+        android:layout_marginTop="16dp" />
+    <EditText
+        android:id="@+id/edtTenSanPham"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập tên sản phẩm"
+        android:padding="12dp"
+        android:background="@drawable/edit_text_background"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Loại sản phẩm -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Loại sản phẩm:"
+        android:textStyle="bold"
+        android:textColor="@color/secondary_text"
+        android:layout_marginTop="16dp" />
+    <RadioGroup
+        android:id="@+id/radioGroupLoai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp">
+
+        <RadioButton
+            android:id="@+id/rbAoCuoi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Đồ cưới"
+            android:textColor="@color/primary_text"
+            android:buttonTint="@color/accent_color"/>
+
+        <RadioButton
+            android:id="@+id/rbVest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phụ kiện"
+            android:layout_marginStart="16dp"
+            android:textColor="@color/primary_text"
+            android:buttonTint="@color/accent_color"/>
+    </RadioGroup>
+
+    <!-- Ảnh sản phẩm -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Đường dẫn ảnh:"
+        android:textStyle="bold"
+        android:textColor="@color/secondary_text"
+        android:layout_marginTop="16dp" />
+    <EditText
+        android:id="@+id/edtAnhSanPham"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập đường dẫn ảnh"
+        android:padding="12dp"
+        android:background="@drawable/edit_text_background"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Giá sản phẩm -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Giá sản phẩm:"
+        android:textStyle="bold"
+        android:textColor="@color/secondary_text"
+        android:layout_marginTop="16dp" />
+    <EditText
+        android:id="@+id/edtGia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập giá sản phẩm"
+        android:padding="12dp"
+        android:background="@drawable/edit_text_background"
+        android:layout_marginTop="8dp"
+        android:inputType="numberDecimal"/>
+
+    <!-- Số lượng sản phẩm -->
+    <TextView
+        android:id="@+id/txtSoLuong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Số lượng: 1"
+        android:textStyle="bold"
+        android:textColor="@color/secondary_text"
+        android:layout_marginTop="16dp" />
+
+    <SeekBar
+        android:id="@+id/seekBarSoLuong"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="300"
+        android:progress="1"
+        android:progressTint="@color/accent_color"
+        android:thumbTint="@color/accent_color"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Nút giảm và tăng số lượng -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp">
+
+        <Button
+            android:id="@+id/btnDecrease"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="-"
+            android:textSize="18sp"
+            android:backgroundTint="@color/button_color"/>
+
+        <Button
+            android:id="@+id/btnIncrease"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="+"
+            android:textSize="18sp"
+            android:layout_marginStart="16dp"
+            android:backgroundTint="@color/button_color"/>
+    </LinearLayout>
+
+    <!-- Mô tả sản phẩm -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mô tả sản phẩm:"
+        android:textStyle="bold"
+        android:textColor="@color/secondary_text"
+        android:layout_marginTop="16dp" />
+    <EditText
+        android:id="@+id/edtMoTa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập mô tả sản phẩm"
+        android:padding="12dp"
+        android:background="@drawable/edit_text_background"
+        android:layout_marginTop="8dp"
+        android:minLines="3"
+        android:gravity="top|start"/>
+
+</LinearLayout>
